@@ -21,7 +21,11 @@ int main(int argc, char *argv[]) {
 		test_array[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	
-	
+	if(n % 2 != 0) {
+		printf("%d is an odd number.", n);
+	}
+	else {
+		
+	}	
 	return 0;
 }
