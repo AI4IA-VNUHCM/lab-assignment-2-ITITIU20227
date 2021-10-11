@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 		test_array[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	int a;
+	int temp;
 	if(n % 2 != 0) {
 		printf("%d is an odd number. Please enter an even number.", n);
 	}
@@ -29,18 +29,18 @@ int main(int argc, char *argv[]) {
 		for(int i = 0; i < n/2; ++i) {
 			for(int j = i + 1; j < n/2; ++j) {
 				if(test_array[i] > test_array[j]) {
-					a = test_array[i];
+					temp = test_array[i];
 					test_array[i] = test_array[j];
-					test_array[j] = a;
+					test_array[j] = temp;
 				}
 			}
 		}
 		for(int i = n/2; i < n; ++i) {
 			for(int j = i + 1; j < n; ++j) {
 				if(test_array[i] < test_array[j]) {
-					a = test_array[i];
+					temp = test_array[i];
 					test_array[i] = test_array[j];
-					test_array[j] = a;
+					test_array[j] = temp;
 				}
 			}
 		}
